@@ -1,10 +1,17 @@
-import React from 'react'
-import cn from "./header.module.css"
+import React from "react";
+import cn from "./header.module.css";
+import Carousel from "./Carousel/Carousel";
+import Auth from "./Auth/Auth";
+import Navbar from "./Navbar/Navbar";
 
 const Header = () => {
   return (
-    <header className={`${cn.header} container`}>Header</header>
-  )
-}
+    <header>
+      <Carousel />
+      <Auth />
+      <Navbar />
+    </header>
+  );
+};
 
-export default Header
+export default Header;

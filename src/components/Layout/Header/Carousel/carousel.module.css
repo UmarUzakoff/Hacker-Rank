@@ -1,0 +1,44 @@
+.carousel {
+  margin: 0 auto;
+  padding: 0 120px;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  background-color: var(--green-custom);
+  color: #fff;
+}
+
+@media (max-width: 1050px) {
+    .carousel {
+        padding: 0;
+        padding-top: 2px !important;
+        padding-bottom: 2px !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .carousel {
+        display: none;
+    }
+}
+
+.swiper {
+  max-width: 1600px;
+  padding-left: 50px;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.btn {
+  padding: 0 10px;
+  background-color: transparent;
+  border: 1px solid #fff !important;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  line-height: 25px;
+  margin: -3px 0 0 8px;
+  cursor: pointer;
+}

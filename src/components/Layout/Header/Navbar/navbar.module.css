@@ -1,0 +1,258 @@
+.navbar_wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 200px !important;
+}
+
+.navbar {
+  margin: 20px 0 !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 1400px) {
+  .navbar_wrapper {
+    padding: 0 25px !important;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+.li,
+.dev {
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.li:hover,
+.dev:hover {
+  color: var(--green-custom);
+}
+
+.logo {
+  width: 184px;
+  height: 20px;
+}
+
+.dev_panel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .list,
+  .dev_panel {
+    display: none;
+  }
+}
+
+.dev {
+  cursor: pointer;
+}
+
+.line {
+  margin: 0 10px 5px 15px;
+  font-size: 20px;
+}
+
+.demo,
+.sign_up {
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 600;
+  display: inline-block;
+  margin-left: 10px;
+  line-height: 40px !important;
+  padding: 0px 15px !important;
+  cursor: pointer;
+}
+
+.demo {
+  background: rgb(247, 247, 247);
+  color: rgb(14, 20, 30);
+}
+
+.sign_up {
+  background: var(--green-custom);
+  color: #fff;
+}
+
+.dropbtn {
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.content {
+  margin-top: 10px;
+  display: none;
+  transform: translateX(-40%);
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 4px;
+  border: 1px solid #dfe3e5;
+}
+
+.content::after {
+  content: " ";
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 50px solid #fff;
+  top: -12px;
+  left: 260px;
+  position: absolute;
+}
+
+.content_feature::after {
+  left: 200px;
+}
+
+.content_feature p:hover {
+  color: var(--green-custom);
+}
+
+.dropdown:hover .content {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.content h5 {
+  font-size: 14px;
+  color: #738f93;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.dropdown:hover .dropbtn {
+  color: var(--green-custom);
+}
+
+.content_ul1,
+.content_ul2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.content_ul1 {
+  width: 250px;
+  gap: 10px;
+}
+
+.content_ul2 {
+  width: 180px;
+}
+
+.content_link {
+  color: black;
+  font-weight: bold;
+  transition: 500ms;
+}
+
+.content_link:hover {
+  color: var(--green-custom);
+}
+
+.content_link_text {
+  margin-top: 5px;
+  line-height: 1.538em;
+  margin-bottom: 0.5em;
+  color: #576871;
+  font-size: 13px;
+}
+
+.burger_menu_container {
+  position: relative;
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .burger_menu_container {
+    display: flex;
+  }
+}
+
+.burger_menu_button {
+  background-color: transparent;
+  border: none;
+}
+
+.burger_close {
+  color: white;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -1550px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transition: right 0.6s ease;
+  z-index: 66;
+}
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  color: black;
+}
+
+.burger_menu_button span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin: 6px;
+  background-color: #333;
+  transition: transform 0.3s ease; /* Transition for smooth animation */
+}
+
+.burger_menu_button span:nth-child(2) {
+  height: 3px;
+}
+
+.burger_menu_button.open span:nth-child(1) {
+  transform: rotate(45deg) translate(2px, 5px); /* Rotate first line and move it diagonally */
+}
+
+.burger_menu_button.open span:nth-child(2) {
+  opacity: 0; /* Hide second line */
+}
+
+.burger_menu_button.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(2px, -5px); /* Rotate third line and move it diagonally */
+}

@@ -1,0 +1,54 @@
+.auth {
+  height: 40px;
+  background: linear-gradient(
+      90deg,
+      rgb(5, 12, 27),
+      rgb(26, 64, 85) 15%,
+      rgb(26, 64, 85) 35%,
+      rgb(5, 12, 27) 50%
+    )
+    rgb(5, 12, 27);
+}
+
+@media (max-width: 1050px) {
+  .auth {
+    display: none;
+  }
+}
+
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 120px;
+  font-size: 14px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1300px) {
+  .wrapper {
+    padding: 10px 0 0 0;
+  }
+}
+
+.link {
+  color: #b7c9cc;
+  transition: 200ms;
+}
+
+.link:hover {
+  color: #fff;
+}
+
+.line {
+  color: #b7c9cc;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding-right: 50px;
+}
