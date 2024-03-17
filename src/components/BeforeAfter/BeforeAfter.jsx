@@ -1,8 +1,8 @@
 import ReactCompareImage from 'react-compare-image';
 import cn from './beforeAfter.module.css';
 
-import Before from '../../../public/assets/images/left.jpg';
-import After from '../../../public/assets/images/right.jpg';
+import Before from '/assets/images/left.jpg';
+import After from '/assets/images/right.jpg';
 import React, { useCallback, useState } from 'react';
 
 import {
