@@ -3,7 +3,7 @@ import cn from './problem.module.css';
 
 // icons and images
 import { FaArrowRight } from 'react-icons/fa';
-import problemImg from '../../../../../public/assets/images/community.jpg';
+import problemImg from '/assets/images/community.jpg';
 import { BeforeAfterComponent } from '../../../../components/BeforeAfter/BeforeAfter';
 
 const Problem = () => {
