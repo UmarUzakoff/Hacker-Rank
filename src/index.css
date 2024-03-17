@@ -14,3 +14,12 @@
   margin: 0 auto;
   padding: 0 120px;
 }
+
+:root {
+  --green-custom: #068932;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  color: #fff;
+  font-size: 15px;
+}

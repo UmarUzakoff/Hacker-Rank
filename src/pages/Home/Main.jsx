@@ -3,7 +3,7 @@ import cn from "./main.module.css"
 
 const Main = () => {
   return (
-    <main className={`${cn.header} container`}>Main</main>
+    <main className={`${cn.main} container`}>Main</main>
   )
 }
 

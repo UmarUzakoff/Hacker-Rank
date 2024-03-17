@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Layout } from "./components";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { HomePage, PageNotFound } from "./pages";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const App = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <Layout>
       <Routes>
