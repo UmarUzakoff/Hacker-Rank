@@ -9,6 +9,10 @@
   font-family: "Open Sans", sans-serif;
 }
 
+a {
+  color: black;
+}
+
 .container {
   max-width: 1600px;
   margin: 0 auto;
@@ -19,7 +23,8 @@
   --green-custom: #068932;
 }
 
-.swiper-button-prev::after, .swiper-button-next::after {
+.swiper-button-prev::after,
+.swiper-button-next::after {
   color: #fff;
   font-size: 15px;
 }
