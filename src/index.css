@@ -23,3 +23,7 @@
   color: #fff;
   font-size: 15px;
 }
+
+body >#root {
+  overflow-x: hidden !important;
+}
