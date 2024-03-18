@@ -3,7 +3,7 @@ import cn from "./hero.module.css"
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <section>Hero</section>
   )
 }
 
