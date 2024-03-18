@@ -1,0 +1,21 @@
+.mySwiper {
+  padding: 20px 10px 60px;
+  background-color: #F7FCFF;
+}
+
+.card {
+  text-align: center;
+}
+
+.card h4 {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  max-width: 317px;
+  margin: 0 auto;
+
+  color:
+    #576871;
+}

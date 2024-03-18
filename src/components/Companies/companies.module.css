@@ -1,0 +1,15 @@
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
+@media (max-width: 1000px) {
+  .sponsors {
+    gap: 15px;
+  }
+}

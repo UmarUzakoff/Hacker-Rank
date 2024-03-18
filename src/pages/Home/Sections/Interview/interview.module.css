@@ -1,0 +1,218 @@
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0px 120px 80px;
+    background-color: #fff;
+}
+
+.interview_line {
+    position: relative;
+}
+
+.interview_line:after {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 70px;
+    border: 1px solid #B7C9CC;
+    border-width: 0 0 1px 1px;
+    left: 65px;
+    top: 0;
+    border-radius: 0 0 0 30px;
+}
+
+.interview_line::before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 90px;
+    border: 1px solid #B7C9CC;
+    border-width: 1px 1px 0 0;
+    right: 50.09%;
+    top: 70px;
+    border-radius: 0 30px 0 0;
+}
+
+.top_text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #B7C9CC;
+    position: relative;
+    margin-bottom: 32px;
+    padding-top: 205px;
+}
+
+.cherry {
+    position: absolute;
+    height: 25px;
+    width: 33px;
+    left: 50%;
+    top: 160px;
+    z-index: 5 !important;
+    margin-left: -34px;
+    margin-top: -3.5px;
+}
+
+.cherry::before {
+    display: block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 1px solid #B7C9CC;
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 50%;
+}
+
+.cherry::after {
+    display: block;
+    content: '';
+    width: 1px;
+    height: 12px;
+    background: #B7C9CC;
+    position: absolute;
+    right: 0;
+    top: 108%;
+    z-index: 5;
+
+    transform: translate(0, -50%);
+}
+
+.title {
+    font-family: Open Sans;
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 73px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #131414;
+}
+
+.title span {
+    color: #32C766;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #576871;
+    max-width: 680px;
+    margin: 0 auto;
+    margin-top: 36px;
+    margin-bottom: 50px;
+}
+
+.btn {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 11px 37px;
+    background-color: #068932;
+    transition: all 0.5s ease;
+    border-radius: 4px;
+    color: white;
+    border: 1px solid #068932;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    background-color: #03561f;
+
+}
+
+.interview_box {
+    margin: 50px 0;
+}
+
+.tools_box {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    gap: 2px;
+
+}
+
+
+.interviewImg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 30px 3%;
+    }
+
+    .interview_line, .cherry {
+        display: none;
+    }
+
+    .top_text {
+        padding-top: 20px;
+    }
+
+    .tools_box img {
+        height: auto;
+        vertical-align: middle;
+        max-width: calc(100% / 6.8) !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .title {
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        max-width: 680px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .top_text {
+        margin-bottom: 25px;
+    }
+
+    .tools_box {
+        margin: 12px 0;
+    }
+
+    .tools_box img {
+        height: 40px;
+        max-width: auto important;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .container {
+        padding: 20px 2%;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+}

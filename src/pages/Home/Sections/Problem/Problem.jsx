@@ -12,7 +12,8 @@ import { BeforeAfterComponent } from '../../../../components/BeforeAfter/BeforeA
 
 const Problem = () => {
 	return (
-		<div className={cn.container}>
+		<section className={cn.problem_section}>
+			<div className={cn.container}>
 			<h2 className={cn.title}>
 				It’s not a pipeline problem.
 				<span className={`${cn.title} ${cn.inner_title}`}>
@@ -154,13 +155,14 @@ const Problem = () => {
 					data-aos-delay='50'
 				>
 					<img
-						src={skill2Img}
+						src={skill3Img}
 						alt='skill Img'
 						className={cn.practice_right_img}
 					/>
 				</div>
 			</div>
 		</div>
+		</section>
 	);
 };
 

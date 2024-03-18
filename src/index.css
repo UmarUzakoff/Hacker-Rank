@@ -19,6 +19,20 @@ a {
   padding: 0 120px;
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+      padding: 30px 3%;
+  }
+}
+
+
+
+@media screen and (max-width: 465px) {
+  .container {
+      padding: 20px 2%;
+  }
+}
+
 :root {
   --green-custom: #068932;
 }

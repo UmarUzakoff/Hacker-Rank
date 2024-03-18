@@ -1,8 +1,11 @@
+.problem_section{
+    background-color: #F7FCFF;
+}
 .container {
     max-width: 1600px;
     margin: 0 auto;
-    padding: 80px 120px;
-    background-color: #fff;
+    padding: 80px 120px 40px;
+   
 }
 
 .title {
@@ -80,7 +83,7 @@
     display: inline-block;
     content: '';
     width: 1px;
-    height: 3280px;
+    height: 3297px;
     background: red;
     right: -20px;
     margin-left: 65px;
@@ -224,7 +227,7 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
     .title {
         font-size: 45px;
         line-height: 55px;
