@@ -4,15 +4,16 @@
   display: flex;
   justify-content: flex-end;
   overflow: hidden;
-  height: 528px;
+  height: 488px;
   margin-top: 24px;
   margin-bottom: 100px;
   margin-left: 80px;
 }
 .img {
-  object-fit: fill;
-  width: 100%;
-  height: 100%;
+  object-fit: fill !important;
+  
+  width: 100% !important;
+  height: 100% !important;
 }
 .top_text {
   font-size: 14px;
@@ -63,11 +64,27 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .contentWrapper {
+    height: 308px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 24px;
+    margin-bottom: 50px;
+  }
+ 
+}
+@media screen and (max-width: 578px) {
+  .contentWrapper {
+    height: 288px;
+  }
+ 
+}
+
 @media screen and (max-width: 465px) {
   .title {
     font-size: 24px;
     line-height: 35px;
-    text-align: center;
   }
 
   .subtitle {
@@ -81,13 +98,32 @@
 
   .comipreTextBox {
     padding-left: 0;
-    padding-top: 0;
+    padding-top: 20px;
+  }
+  .top_text{
+    margin-bottom: 10px;
   }
   .contentWrapper {
-    height: 328px;
-    margin-top: 24px;
-    margin-bottom: 80px;
-    margin-left: 0;
-    margin-right: 0;
+    height: 258px;
+  
+   
+  }
+}
+
+@media screen and (max-width: 408px) {
+  .contentWrapper {
+    height: 228px;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  .contentWrapper {
+    height: 160px;
+    margin-bottom: 0px;
+  }
+  .img {
+    object-fit: contain !important;
+    width: 100% !important;
+    height: 100% !important;
   }
 }

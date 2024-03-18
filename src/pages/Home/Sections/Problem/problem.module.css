@@ -282,6 +282,7 @@
         font-size: 20px;
         font-weight: 600;
         line-height: 30px;
+       
      
     }
     .practice_subtitle {
@@ -350,10 +351,7 @@
     width: 60%;
     /* height: 500px; */
 }
-/* .skills_box .practice_right .practice_right_img{
-    height: 500px;
-    object-fit: cover;
-} */
+
 .skill_title{
     max-width: 341.73px;
 font-family: Open Sans;
