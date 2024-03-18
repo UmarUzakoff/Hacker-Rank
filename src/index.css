@@ -21,7 +21,7 @@ a {
 
 @media screen and (max-width: 1024px) {
   .container {
-    padding: 30px 3%;
+      padding: 30px 3%;
   }
 }
 
@@ -32,7 +32,7 @@ html {
 
 @media screen and (max-width: 465px) {
   .container {
-    padding: 20px 2%;
+      padding: 20px 2%;
   }
 }
 
@@ -46,6 +46,6 @@ html {
   font-size: 15px;
 }
 
-body>#root {
+body >#root {
   overflow-x: hidden !important;
 }
