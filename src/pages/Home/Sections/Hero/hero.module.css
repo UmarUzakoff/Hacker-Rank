@@ -1,0 +1,161 @@
+.hero {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 50px 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  border-bottom: 1px solid #fff;
+}
+
+@media (max-width: 1300px) {
+  .hero {
+    padding: 30px 20px;
+  }
+}
+
+.hero::before {
+  content: "";
+  max-height: max-content;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  display: block;
+  background: #6e6bfe;
+  border-radius: 50%;
+  box-shadow: 0 0 1000px 350px #6e6bfe;
+  z-index: -1;
+  right: 0;
+  top: 100%;
+  transform: translate(-80%, -80%);
+  opacity: 0.2;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  display: block;
+  background: #1ba94c;
+  border-radius: 50%;
+  box-shadow: 0 0 1000px 350px #1ba94c;
+  z-index: -1;
+  left: 0;
+  top: 100%;
+  transform: translate(80%, -80%);
+  opacity: 0.2;
+}
+
+.hero div:first-child {
+  max-width: 780px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.hero div:nth-child(2) {
+  max-width: 620px;
+}
+
+.hero div:nth-child(2) p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.demo,
+.sign_up {
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 600;
+  display: inline-block;
+  line-height: 40px !important;
+  padding: 5px 15px !important;
+  cursor: pointer;
+  min-width: 155px;
+}
+
+.demo {
+  color: rgb(14, 20, 30);
+  border: 1px solid black;
+  margin-left: 25px;
+}
+
+.sign_up {
+  background: var(--green-custom);
+  color: #fff;
+}
+
+.second_p {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 32px auto 0;
+  color: #39424e;
+  text-align: center;
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media (max-width: 500px) {
+  .btns {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .demo,
+  .sign_up {
+    margin: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero div:first-child {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+
+  .demo,
+  .sign_up {
+    width: 100% !important;
+  }
+
+  .hero::before {
+    top: 130%;
+  }
+
+  .hero::after {
+    top: 130%;
+  }
+
+  .sponsors {
+    gap: 15px;
+  }
+}
