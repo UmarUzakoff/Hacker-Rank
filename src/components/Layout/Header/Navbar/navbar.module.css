@@ -1,5 +1,4 @@
 .navbar_wrapper {
-  max-width: 1600px;
   margin: 0 auto;
   padding: 0 200px !important;
   transition: 0.3s;
@@ -8,6 +7,7 @@
 }
 
 .navbar {
+  max-width: 1400px;
   padding: 2px 0;
   margin: 20px 0 !important;
   display: flex;
@@ -24,7 +24,7 @@
   left: 0;
   right: 0;
   width: 100%;
-  /* display: flex; */
+  display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
@@ -35,11 +35,27 @@
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 }
 
-@media (max-width: 1400px) {
+@media (min-width: 1550px) {
   .navbar_wrapper {
     padding: 0 3% !important;
+    display: flex;
+    justify-content: center;
   }
 }
+
+@media (max-width: 1400px) {
+  .navbar_wrapper {
+    padding: 0 120px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar_wrapper {
+    padding: 0 3% !important;
+    display: block;
+  }
+}
+
 @media (max-width: 465px) {
   .navbar_wrapper {
     padding: 0 2% !important;
@@ -83,6 +99,7 @@
 }
 
 @media (max-width: 1200px) {
+
   .list,
   .dev_panel {
     display: none;
@@ -113,6 +130,7 @@
 }
 
 @media (max-width: 1200px) {
+
   .demo,
   .sign_up {
     margin-left: 0;
@@ -278,6 +296,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .sidebar.open {
   right: 0;
 }
@@ -298,7 +317,8 @@
   height: 2px;
   margin: 6px;
   background-color: #333;
-  transition: transform 0.3s ease; /* Transition for smooth animation */
+  transition: transform 0.3s ease;
+  /* Transition for smooth animation */
 }
 
 .burger_menu_button span:nth-child(2) {
@@ -306,15 +326,18 @@
 }
 
 .burger_menu_button.open span:nth-child(1) {
-  transform: rotate(45deg) translate(2px, 5px); /* Rotate first line and move it diagonally */
+  transform: rotate(45deg) translate(2px, 5px);
+  /* Rotate first line and move it diagonally */
 }
 
 .burger_menu_button.open span:nth-child(2) {
-  opacity: 0; /* Hide second line */
+  opacity: 0;
+  /* Hide second line */
 }
 
 .burger_menu_button.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(2px, -5px); /* Rotate third line and move it diagonally */
+  transform: rotate(-45deg) translate(2px, -5px);
+  /* Rotate third line and move it diagonally */
 }
 
 .mobile_ul {
