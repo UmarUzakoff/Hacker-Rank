@@ -3,7 +3,11 @@ import cn from './problem.module.css';
 
 // icons and images
 import { FaArrowRight } from 'react-icons/fa';
+import { HiArrowLongRight } from 'react-icons/hi2';
 import problemImg from '/assets/images/community.jpg';
+import skill1Img from '/assets/images/binarytree1.png';
+import skill2Img from '/assets/images/binarytree2.png';
+import skill3Img from '/assets/images/binarytree3.png';
 import { BeforeAfterComponent } from '../../../../components/BeforeAfter/BeforeAfter';
 
 const Problem = () => {
@@ -61,37 +65,101 @@ const Problem = () => {
 			</div>
 			<BeforeAfterComponent />
 
-{/* Skill boxes  */}
+			{/* Skill boxes  */}
 
-
-<div className={cn.skills_box}>
+			<div className={cn.skills_box}>
 				<div className={cn.practice_left}>
 					<div className={cn.top_text}>
-						<i className={cn.cherry}></i>
-						<h3 className={cn.skill_title}>Explore and expand your skills.</h3>
+						<i className={`${cn.cherry} ${cn.before_title}`}></i>
+						<h3 className={cn.skill_title}>Leave the binary tree behind.</h3>
 					</div>
-					
-					<p className={cn.practice_subtitle}>
-						Every idea has a first line of code. Prep for jobs and sharpen your
-						skills alongside a global community of developers. Access the
-						content you need to develop new skills – and land the job you’ve
-						dreamed of.
+
+					<p className={cn.skill_subtitle}>
+						Build coding questions using our library of dev-friendly content
+						that challenges them to solve the problems they’d actually tackle on
+						the job.
 					</p>
 
-					<button className={cn.btn}>
-						Sign up and practice
-						<FaArrowRight />
+					<button className={`${cn.btn} ${cn.btn_outline}`}>
+						Start free trial
+						<HiArrowLongRight size={18} />
 					</button>
 				</div>
-				<div className={cn.practice_right}>
+				<div
+					className={cn.practice_right}
+					data-aos='fade-left'
+					data-aos-delay='50'
+				>
 					<img
-						src={problemImg}
-						alt='problemImg'
+						src={skill1Img}
+						alt='skill Img'
 						className={cn.practice_right_img}
 					/>
 				</div>
 			</div>
 
+			<div className={cn.skills_box}>
+				<div className={cn.practice_left}>
+					<div className={cn.top_text}>
+						<i className={`${cn.cherry} ${cn.before_title}`}></i>
+						<h3 className={cn.skill_title}>
+							Focus on what really matters: the code.
+						</h3>
+					</div>
+
+					<p className={cn.skill_subtitle}>
+						Build skills-based coding tests with tech problems a developer would
+						encounter on the job — and hire the team behind your next big idea.
+					</p>
+
+					<button className={`${cn.btn} ${cn.btn_outline}`}>
+						Request a demo
+						<HiArrowLongRight size={18} />
+					</button>
+				</div>
+				<div
+					className={cn.practice_right}
+					data-aos='fade-left'
+					data-aos-delay='50'
+				>
+					<img
+						src={skill2Img}
+						alt='skill Img'
+						className={cn.practice_right_img}
+					/>
+				</div>
+			</div>
+
+			<div className={cn.skills_box}>
+				<div className={cn.practice_left}>
+					<div className={cn.top_text}>
+						<i className={`${cn.cherry} ${cn.before_title}`}></i>
+						<h3 className={cn.skill_title}>Identify top contenders.</h3>
+					</div>
+
+					<p className={cn.skill_subtitle}>
+						Identify top contenders and invite them to meet your team using
+						data-driven decisions that help level the playing field for
+						developers everywhere.
+					</p>
+
+					<button className={`${cn.btn} ${cn.btn_outline}`}>
+						Learn more
+						<HiArrowLongRight size={18} />
+					</button>
+				</div>
+				<div
+					className={cn.practice_right}
+					data-aos='fade-left'
+					data-aos-delay='50'
+				>
+					<img
+						src={skill2Img}
+						alt='skill Img'
+						className={cn.practice_right_img}
+					/>
+				</div>
+			</div>
 		</div>
 	);
 };

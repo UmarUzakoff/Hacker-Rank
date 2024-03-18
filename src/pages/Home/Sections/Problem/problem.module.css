@@ -80,7 +80,7 @@
     display: inline-block;
     content: '';
     width: 1px;
-    height: 1000px;
+    height: 3280px;
     background: red;
     right: -20px;
     margin-left: 65px;
@@ -102,6 +102,7 @@
 
 .practice_left, .practice_right {
     width: 50%;
+    
 }
 
 .practice_right_img {
@@ -343,10 +344,18 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-bottom: 180px;
 }
+.skills_box .practice_right{
+    width: 60%;
+    /* height: 500px; */
+}
+/* .skills_box .practice_right .practice_right_img{
+    height: 500px;
+    object-fit: cover;
+} */
 .skill_title{
-    width: 341.73px;
-height: 86.4px;
+    max-width: 341.73px;
 font-family: Open Sans;
 font-size: 32px;
 font-weight: 700;
@@ -354,7 +363,81 @@ line-height: 43px;
 letter-spacing: 0em;
 text-align: left;
 color: #0E141E;
-
     position: relative;
     margin-bottom: 32px;
+}
+.before_title{
+    margin-top: 9.5px !important;
+}
+
+.skill_subtitle{
+max-width: 379px;
+font-size: 18px;
+font-weight: 300;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+color: #576871;
+}
+.btn_outline{
+    color: #000 !important;
+    border: none;
+    padding: 0 !important;
+    padding: 0px 50px 0px 0px !important;
+    font-weight: 800;
+    font-size: 14;
+}
+.btn_outline svg {
+   
+    top: 34%;
+
+}
+/* tablet and mobile  */
+
+@media screen and (max-width: 1000px) {
+
+    .skills_box{
+        padding: 24px 0px;
+        flex-direction: column;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    .skills_box .top_text{
+        padding: 0;
+    }
+    .skill_title, .skill_subtitle{
+        max-width: 100%;
+        height: auto;
+        text-align: left;
+    }
+    .skill_title{
+        margin-bottom: 20px     ;
+    }
+    .before_title{
+        margin-top: 9.5px !important;
+        display: none;
+    }
+    .skills_box .practice_right{
+        width: 100%;
+        /* height: 500px; */
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .skills_box{
+        margin-bottom: 30px;
+    }
+  
+    .skill_subtitle{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .skill_title{
+        margin-bottom: 15px     ;
+        font-size: 22px;
+        line-height: 32px;
+    }
+  
 }
