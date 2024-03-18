@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "/assets/images/logo.png";
 import cn from "./navbar.module.css";
 import { Link } from "react-router-dom";
@@ -20,8 +20,24 @@ const Navbar = () => {
     "For candidates",
     "Contact Us",
   ];
+
+  const [sticky, setSticky] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", isSticky);
+    return () => {
+      window.removeEventListener("scroll", isSticky);
+    };
+  }, []);
+
+  const isSticky = () => {
+    const scrollTop = window.scrollY;
+    const stickyClass = scrollTop >= 180 ? true : false;
+    setSticky(stickyClass);
+  };
+
   return (
-    <div className={`${cn.navbar_wrapper}`}>
+    <div className={`${cn.navbar_wrapper} ${sticky ? cn.is_sticky : ""}`}>
       <nav className={`${cn.navbar}`}>
         <Link to={"/"}>
           <img className={`${cn.logo}`} src={logo} alt="logo" />
@@ -185,8 +201,8 @@ const Navbar = () => {
                 Log in <FaArrowRight />
               </Link>
               <hr />
-              <button className={`${cn.demo}`}>Request demo</button>
-              <button className={`${cn.sign_up}`}>Sign up</button>
+              <Link className={`${cn.demo}`}>Request demo</Link>
+              <Link className={`${cn.sign_up}`}>Sign up</Link>
             </div>
           </div>
         </div>
