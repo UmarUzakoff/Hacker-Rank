@@ -1,100 +1,93 @@
-
-  .contentWrapper {
-   max-width: 1030px;
-   border-radius: 8px;
-   display: flex;
- justify-content: flex-end;
-   overflow: hidden;
-   height: 528px;
-   margin-top: 24px;
-   margin-bottom: 100px;
-   margin-left: 80px;
-  }
-  .img{
-    object-fit: fill;
-    width: 100%;
-    height: 100%;
-  }
-  .top_text {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #B7C9CC;
-    position: relative;
-    margin-bottom: 32px;
+.contentWrapper {
+  max-width: 1030px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  height: 528px;
+  margin-top: 24px;
+  margin-bottom: 100px;
+  margin-left: 80px;
 }
-.comipreTextBox{
-    padding-left: 80px;
-    padding-top: 80px;
+.img {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+.top_text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #b7c9cc;
+  position: relative;
+  margin-bottom: 32px;
+}
+.comipreTextBox {
+  padding-left: 80px;
+  padding-top: 80px;
 }
 .title {
-    font-size: 56px;
-    font-weight: 300;
-    line-height: 63px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin: 0 auto;
-    color: #068932;
-    margin-bottom: 20px;
+  font-size: 56px;
+  font-weight: 300;
+  line-height: 63px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0 auto;
+  color: #068932;
+  margin-bottom: 20px;
 }
 
 .inner_title {
-    display: block;
-    color: #131414;
-    
+  display: block;
+  color: #131414;
 }
-
 
 @media screen and (max-width: 1000px) {
-    .title{
-        font-size: 35px;
-        line-height: 45px;
-    }
+  .title {
+    font-size: 35px;
+    line-height: 45px;
+  }
 
-    .comipreTextBox{
-        padding-left: 40px;
-        padding-top: 40px;
-    }
-    .contentWrapper {
-    
-        height: 428px;
-        margin-top: 24px;
-        margin-bottom: 80px;
-        margin-left: 20px;
-        margin-right: 20px;
-       }
-    
+  .comipreTextBox {
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+  .contentWrapper {
+    height: 428px;
+    margin-top: 24px;
+    margin-bottom: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
-
 @media screen and (max-width: 465px) {
-    .title {
-        font-size: 24px;
-        line-height: 35px;
-        text-align: center;
-    }
+  .title {
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+  }
 
-    .subtitle {
-        font-size: 15px;
-        line-height: 25px;
-    }
+  .subtitle {
+    font-size: 15px;
+    line-height: 25px;
+  }
 
-    .container {
-        padding: 2%;
-    }
+  .container {
+    padding: 2%;
+  }
 
-    .comipreTextBox{
-        padding-left: 0;
-        padding-top: 0;
-    }
-    .contentWrapper {
-    
-        height: 328px;
-        margin-top: 24px;
-        margin-bottom: 80px;
-        margin-left: 0;
-        margin-right: 0;
-       }
+  .comipreTextBox {
+    padding-left: 0;
+    padding-top: 0;
+  }
+  .contentWrapper {
+    height: 328px;
+    margin-top: 24px;
+    margin-bottom: 80px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
