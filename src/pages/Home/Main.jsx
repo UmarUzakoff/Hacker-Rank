@@ -1,15 +1,14 @@
-import React from 'react'
-import cn from "./main.module.css"
-import Problem from './Sections/Problem/Problem'
+import React from "react";
+import cn from "./main.module.css";
+import Problem from "./Sections/Problem/Problem";
 
 const Main = () => {
   return (
     <main className={`${cn.header} `}>
-    
-    <Problem/>
-    
+      <Hero />
+      <Problem />
     </main>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;
