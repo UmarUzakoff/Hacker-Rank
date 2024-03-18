@@ -177,7 +177,7 @@ const Navbar = () => {
 
           <div className={`${cn.sidebar} ${isOpen ? `${cn.open}` : ""}`}>
             <Link to={"/"}>
-              <img className={`${cn.logo}`} src={logo} alt="logo" />
+              <img className={`${cn.mobile_logo}`} src={logo} alt="logo" />
             </Link>
             <button className={`${cn.burger_close}`} onClick={toggleMenu}>
               <FaXmark />
