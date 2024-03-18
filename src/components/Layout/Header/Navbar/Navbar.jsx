@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import logo from "../../../../../public/assets/images/logo.png";
+import logo from "/assets/images/logo.png";
 import cn from "./navbar.module.css";
 import { Link } from "react-router-dom";
+import { FaArrowRight, FaGreaterThan, FaXmark } from "react-icons/fa6";
 import data from "./data.js";
 
 const Navbar = () => {
@@ -10,6 +11,15 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const mobile_nav = [
+    "Products",
+    "Solutions",
+    "Resources",
+    "Pricing",
+    "For candidates",
+    "Contact Us",
+  ];
   return (
     <div className={`${cn.navbar_wrapper}`}>
       <nav className={`${cn.navbar}`}>
@@ -150,16 +160,34 @@ const Navbar = () => {
           </button>
 
           <div className={`${cn.sidebar} ${isOpen ? `${cn.open}` : ""}`}>
-            <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact</li>
-              <button
-                className={`${cn.burger_close}`}
-                onClick={toggleMenu}>
-                X
-              </button>
+            <Link to={"/"}>
+              <img className={`${cn.logo}`} src={logo} alt="logo" />
+            </Link>
+            <button className={`${cn.burger_close}`} onClick={toggleMenu}>
+              <FaXmark />
+            </button>
+            <ul className={`${cn.mobile_ul}`}>
+              {mobile_nav.map((item, index) => (
+                <li key={index} className={`${cn.mobile_li}`}>
+                  <Link>{item}</Link>
+                  {item === "Products" ||
+                  item === "Resources" ||
+                  item === "Solutions" ? (
+                    <span>
+                      <FaGreaterThan />
+                    </span>
+                  ) : null}
+                </li>
+              ))}
             </ul>
+            <div className={`${cn.mobile_dev_panel}`}>
+              <Link className={`${cn.mobile_login}`}>
+                Log in <FaArrowRight />
+              </Link>
+              <hr />
+              <button className={`${cn.demo}`}>Request demo</button>
+              <button className={`${cn.sign_up}`}>Sign up</button>
+            </div>
           </div>
         </div>
       </nav>

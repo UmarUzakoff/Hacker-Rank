@@ -79,6 +79,13 @@
   cursor: pointer;
 }
 
+@media (max-width: 1200px) {
+  .demo,
+  .sign_up {
+    margin-left: 0;
+  }
+}
+
 .demo {
   background: rgb(247, 247, 247);
   color: rgb(14, 20, 30);
@@ -205,7 +212,22 @@
 }
 
 .burger_close {
-  color: white;
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  font-size: 25px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+@media (max-width: 800px) {
+  .burger_close {
+    top: 25px;
+  }
 }
 
 .sidebar {
@@ -217,6 +239,11 @@
   background-color: #fff;
   transition: right 0.6s ease;
   z-index: 66;
+  display: flex;
+  padding-top: 60px;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 .sidebar.open {
   right: 0;
@@ -255,4 +282,38 @@
 
 .burger_menu_button.open span:nth-child(3) {
   transform: rotate(-45deg) translate(2px, -5px); /* Rotate third line and move it diagonally */
+}
+
+.mobile_ul {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mobile_li {
+  width: 95vw;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile_li span {
+  font-size: 10px;
+}
+
+.mobile_dev_panel {
+  margin-top: 10px;
+  width: 93vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile_login {
+  align-self: center;
 }
