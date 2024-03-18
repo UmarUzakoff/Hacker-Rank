@@ -21,15 +21,18 @@ a {
 
 @media screen and (max-width: 1024px) {
   .container {
-      padding: 30px 3%;
+    padding: 30px 3%;
   }
 }
 
-
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
 
 @media screen and (max-width: 465px) {
   .container {
-      padding: 20px 2%;
+    padding: 20px 2%;
   }
 }
 
@@ -43,6 +46,6 @@ a {
   font-size: 15px;
 }
 
-body >#root {
+body>#root {
   overflow-x: hidden !important;
 }

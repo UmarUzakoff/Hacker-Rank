@@ -12,7 +12,7 @@ import toolImg7 from '/assets/images/tool7.png';
 
 export const Interview = () => {
 	return (
-		<div className={cn.container}>
+		<div id='interview' className={cn.container}>
 			<div className={cn.interview_line}></div>
 
 			<div className={cn.top_text}>

@@ -22,7 +22,7 @@ const Join = () => {
 				</h4>
 				<p className={cn.subtitle}>
 					More than 3,000 tech teams, representing all industries and from
-					countries  the world
+					countries the world
 				</p>
 				<button className={cn.btn}>Request a demo</button>
 			</div>
