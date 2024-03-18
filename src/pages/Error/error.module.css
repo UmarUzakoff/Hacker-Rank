@@ -1,0 +1,46 @@
+.notfound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #666;
+}
+
+.wrapper {
+  margin: 50px 0;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.wrapper h1 {
+  font-size: 18px;
+}
+
+.wrapper div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.wrapper a {
+  text-decoration: underline;
+  color: #666;
+  font-size: 14px;
+}
+
+.wrapper span {
+  position: relative;
+  top: 3px;
+  font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+  .notfound {
+    padding: 0 20px !important;
+  }
+}
