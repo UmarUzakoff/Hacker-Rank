@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
-import logo from "/assets/images/logo.png";
 import cn from "./navbar.module.css";
 import { Link } from "react-router-dom";
-import { FaArrowRight, FaGreaterThan, FaXmark } from "react-icons/fa6";
 import data from "./data.js";
+
+// images and icons
+import logo from "/assets/images/logo.png";
+import { FaArrowRight, FaGreaterThan, FaXmark } from "react-icons/fa6";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -128,7 +130,7 @@ const Navbar = () => {
           </li>
           <li className={`${cn.li}`}>
             <div className={`${cn.dropdown}`}>
-              <button className={`${cn.dropbtn}`}>Solutions</button>
+              <button className={`${cn.dropbtn}`}>Resources</button>
               <div className={`${cn.content}`}>
                 <div>
                   <h5>What We Do</h5>
@@ -164,8 +166,10 @@ const Navbar = () => {
         <div className={`${cn.dev_panel}`}>
           <span className={`${cn.dev}`}>For developers</span>
           <span className={`${cn.line}`}>|</span>
-          <button className={`${cn.demo}`}>Request demo</button>
-          <button className={`${cn.sign_up}`}>Sign up</button>
+          <Link className={`${cn.demo}`}>Request demo</Link>
+          <Link to={"/auth/register"} className={`${cn.sign_up}`}>
+            Sign up
+          </Link>
         </div>
 
         <div className={`${cn.burger_menu_container}`}>
@@ -197,12 +201,14 @@ const Navbar = () => {
               ))}
             </ul>
             <div className={`${cn.mobile_dev_panel}`}>
-              <Link className={`${cn.mobile_login}`}>
+              <Link to={"/auth/login"} className={`${cn.mobile_login}`}>
                 Log in <FaArrowRight />
               </Link>
               <hr />
               <Link className={`${cn.demo}`}>Request demo</Link>
-              <Link className={`${cn.sign_up}`}>Sign up</Link>
+              <Link to={"/auth/register"} className={`${cn.sign_up}`}>
+                Sign up
+              </Link>
             </div>
           </div>
         </div>

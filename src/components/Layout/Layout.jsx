@@ -7,9 +7,17 @@ export const Layout = ({ children }) => {
   const url = useLocation().pathname;
   return (
     <div className="main_box">
-      {url === "/404" ? null : <Header />}
+      {url === "/404" ||
+      url === "/auth/login" ||
+      url === "/auth/register" ? null : (
+        <Header />
+      )}
       {children}
-      {url === "/404" ? null : <Footer />}
+      {url === "/404" ||
+      url === "/auth/login" ||
+      url === "/auth/register" ? null : (
+        <Footer />
+      )}
     </div>
   );
 };

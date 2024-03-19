@@ -1,0 +1,228 @@
+.login_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 15px;
+}
+
+.form {
+  width: 500px;
+  box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+  border-radius: 4px;
+  padding-bottom: 20px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn_reg,
+.btn_log {
+  width: 50%;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.btn_reg {
+  background-color: #f9fbfb;
+}
+
+.btn_log {
+  box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+}
+
+.inputs {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.group {
+  display: flex;
+  line-height: 30px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.input {
+  width: 90%;
+  height: 55px;
+  line-height: 30px;
+  padding: 0 2rem;
+  padding-left: 3rem;
+  border: 1.5px solid #a7a4a4;
+  outline: none;
+  background-color: #f8fafc;
+  color: #0d0c22;
+  transition: 0.5s ease;
+}
+
+.input::placeholder {
+  color: #94a3b8;
+}
+
+.input:focus {
+  border-color: #0d0c22;
+}
+
+.icon1 {
+  position: absolute;
+  left: 3rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.icon {
+  position: absolute;
+  left: 3rem;
+  fill: none;
+  width: 1rem;
+  height: 1rem;
+}
+
+.hide {
+  display: none;
+}
+
+.smth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check {
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  width: 18px;
+  height: 18px;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+
+.remember {
+  display: flex;
+  flex-direction: row;
+  align-items: center !important;
+  text-align: center;
+  gap: 5px;
+}
+
+.remember span {
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.policy {
+  color: #4394fd;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.policy:hover {
+  text-decoration: underline;
+}
+
+.check:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.check svg {
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 1.5;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.check svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+  opacity: 1;
+}
+
+.check:hover svg {
+  stroke: var(--green-custom);
+}
+
+.hide:checked + .check svg {
+  stroke: var(--green-custom);
+}
+
+.hide:checked + .check svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+
+.hide:checked + .check svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
+}
+
+.forget {
+  color: #4394fd;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.forget:hover {
+  text-decoration: underline;
+}
+
+.rem_for {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+
+.submit {
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 600;
+  margin: 0 25px;
+  display: inline-block;
+  line-height: 40px !important;
+  padding: 0px 15px !important;
+  cursor: pointer;
+  background-color: var(--green-custom);
+  color: #fff;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
