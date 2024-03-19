@@ -4,9 +4,8 @@
   align-items: center;
   text-align: center;
   flex-direction: column;
-  margin-top: 50px;
-  margin-bottom: 50px;
   gap: 15px;
+  margin: 50px !important;
 }
 
 .form {
@@ -182,6 +181,16 @@
 
 .forget:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .form {
+    width: 340px;
+  }
+
+  .remember, .forget {
+    font-size: 13px;
+  }
 }
 
 .rem_for {

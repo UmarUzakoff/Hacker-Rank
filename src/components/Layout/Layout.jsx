@@ -8,12 +8,14 @@ export const Layout = ({ children }) => {
   return (
     <div className="main_box">
       {url === "/404" ||
+      url === "/dashboard" ||
       url === "/auth/login" ||
       url === "/auth/register" ? null : (
         <Header />
       )}
       {children}
       {url === "/404" ||
+      url === "/dashboard" ||
       url === "/auth/login" ||
       url === "/auth/register" ? null : (
         <Footer />

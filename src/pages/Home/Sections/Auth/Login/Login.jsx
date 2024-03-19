@@ -41,12 +41,14 @@ const LoginForm = () => {
       }
 
       if (admin.username === username && admin.password === password) {
+        alert("Welcome back to dashboard!");
         localStorage.setItem("verified", "admin");
+        navigate("/dashboard");
       } else {
+        alert("Successfully logged in!");
         localStorage.setItem("verified", "user");
+        navigate("/");
       }
-
-      navigate("/");
     } catch (error) {
       console.error("Error logging in:", error);
       setError("Error logging in. Please try again later.");

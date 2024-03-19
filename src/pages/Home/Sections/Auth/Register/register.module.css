@@ -199,6 +199,12 @@
   text-decoration: underline;
 }
 
+@media (max-width: 500px) {
+  .form {
+    width: 340px;
+  }
+}
+
 .rem_for {
   display: flex;
   flex-direction: row;
