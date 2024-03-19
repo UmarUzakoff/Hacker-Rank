@@ -11,7 +11,7 @@ const Auth = () => {
             Contact us
           </Link>
           <span className={`${cn.line}`}>|</span>
-          <Link to={"/"} className={`${cn.link}`}>
+          <Link to={"/auth/login"} className={`${cn.link}`}>
             Log in
           </Link>
         </div>

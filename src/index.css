@@ -7,6 +7,7 @@
   list-style: none;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
@@ -21,15 +22,13 @@ a {
 
 @media screen and (max-width: 1024px) {
   .container {
-      padding: 30px 3%;
+    padding: 30px 3%;
   }
 }
 
-
-
 @media screen and (max-width: 465px) {
   .container {
-      padding: 20px 2%;
+    padding: 20px 2%;
   }
 }
 
@@ -43,6 +42,23 @@ a {
   font-size: 15px;
 }
 
-body >#root {
+.swiper-pagination-bullets {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--green-custom);
+}
+
+.swiper-pagination-bullet-active {
+  scale: 150%;
+}
+
+body > #root {
   overflow-x: hidden !important;
 }

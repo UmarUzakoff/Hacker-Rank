@@ -98,6 +98,11 @@
 .sign_up {
   background: var(--green-custom);
   color: #fff;
+  transition: 200ms;
+}
+
+.sign_up:hover {
+  background-color: #03561f;
 }
 
 .second_p {
@@ -108,7 +113,6 @@
   color: #39424e;
   text-align: center;
 }
-
 
 @media (max-width: 500px) {
   .btns {
@@ -146,6 +150,4 @@
   .hero::after {
     top: 130%;
   }
-
- 
 }
