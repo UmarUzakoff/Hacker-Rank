@@ -41,6 +41,8 @@ const LoginForm = () => {
         password,
       });
 
+      alert("Successfully registered, let's log in now!");
+
       navigate("/auth/login");
     } catch (error) {
       console.error("Error registering user:", error);
