@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import Companies from "../../../../components/Companies/Companies";
 
 const Hero = () => {
+  let verified = localStorage.getItem("verified");
+
   return (
     <section className={`${cn.hero}`}>
       <div>
@@ -19,7 +21,7 @@ const Hero = () => {
         <Link to={"/auth/register"} className={`${cn.sign_up}`}>
           Sign up
         </Link>
-        <Link className={`${cn.demo}`}>Request demo</Link>
+        {verified ? <Link className={`${cn.demo}`}>Request demo</Link> : null}
       </div>
       <p className={`${cn.second_p}`}>
         Over 40% of developers worldwide and 3,000 companies use HackerRank

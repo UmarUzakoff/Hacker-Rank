@@ -10,6 +10,8 @@ import { FaArrowRight, FaGreaterThan, FaXmark } from "react-icons/fa6";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  let verified = localStorage.getItem("verified");
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -166,7 +168,7 @@ const Navbar = () => {
         <div className={`${cn.dev_panel}`}>
           <span className={`${cn.dev}`}>For developers</span>
           <span className={`${cn.line}`}>|</span>
-          <Link className={`${cn.demo}`}>Request demo</Link>
+          {verified ? <Link className={`${cn.demo}`}>Request demo</Link> : null}
           <Link to={"/auth/register"} className={`${cn.sign_up}`}>
             Sign up
           </Link>
@@ -205,7 +207,9 @@ const Navbar = () => {
                 Log in <FaArrowRight />
               </Link>
               <hr />
-              <Link className={`${cn.demo}`}>Request demo</Link>
+              {verified ? (
+                <Link className={`${cn.demo}`}>Request demo</Link>
+              ) : null}
               <Link to={"/auth/register"} className={`${cn.sign_up}`}>
                 Sign up
               </Link>

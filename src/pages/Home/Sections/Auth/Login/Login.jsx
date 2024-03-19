@@ -15,6 +15,11 @@ const LoginForm = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
+  const admin = {
+    username: "admin",
+    password: "123",
+  };
+
   const handleLogin = async () => {
     try {
       if (!username.trim() || !password.trim()) {
@@ -30,14 +35,18 @@ const LoginForm = () => {
         (user) => user.username === username && user.password === password
       );
 
-      console.log(findUser);
-
       if (!findUser) {
         setError("Invalid username or password. Please try again.");
         return;
       }
 
-      navigate("/404");
+      if (admin.username === username && admin.password === password) {
+        localStorage.setItem("verified", "admin");
+      } else {
+        localStorage.setItem("verified", "user");
+      }
+
+      navigate("/");
     } catch (error) {
       console.error("Error logging in:", error);
       setError("Error logging in. Please try again later.");
