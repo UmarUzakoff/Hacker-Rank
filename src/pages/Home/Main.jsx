@@ -11,9 +11,9 @@ const Main = () => {
     <main className={`${cn.header} `}>
       <Hero />
       <Problem />
-      <Interview/>
-      <Reviews/>
-      <Join/>
+      <Interview />
+      <Reviews />
+      <Join />
     </main>
   );
 };

@@ -11,7 +11,7 @@
 }
 .img {
   object-fit: fill !important;
-  
+
   width: 100% !important;
   height: 100% !important;
 }
@@ -72,13 +72,11 @@
     margin-top: 24px;
     margin-bottom: 50px;
   }
- 
 }
 @media screen and (max-width: 578px) {
   .contentWrapper {
     height: 288px;
   }
- 
 }
 
 @media screen and (max-width: 465px) {
@@ -100,13 +98,11 @@
     padding-left: 0;
     padding-top: 20px;
   }
-  .top_text{
+  .top_text {
     margin-bottom: 10px;
   }
   .contentWrapper {
     height: 258px;
-  
-   
   }
 }
 

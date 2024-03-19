@@ -34,7 +34,6 @@ const data = [
     ],
   },
   {
-    name: "Resources",
     data1: [
       {
         name: "Blog",
